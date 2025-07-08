@@ -92,19 +92,8 @@ $(document).ready(function() {
         location.href = 'https://open.spotify.com/intl-es/artist/7orGHgkV2fHX9wYdULldqa'; // Replace with actual album link
     });
 
-    // Platform links interaction
-    $('.platform-link').click(function(e) {
-        e.preventDefault();
-        var platform = $(this).text().trim();
-        alert(`Redirigiendo a ${platform}... ¡Próximamente disponible!`);
-    });
-
-    // Social links interaction
-    $('.social-link').click(function(e) {
-        e.preventDefault();
-        alert('¡Síguenos en nuestras redes sociales! Enlaces próximamente disponibles.');
-    });
-
+    
+   
     // Contact form functionality (if needed in the future)
     function initContactForm() {
         // Contact form logic can be added here
