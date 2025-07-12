@@ -849,3 +849,271 @@ img:hover {
 .story-card:hover::before {
     transform: translateX(100%);
 }
+
+/* Upcoming Releases Styles */
+.upcoming-release-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.upcoming-release-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.upcoming-cover {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.upcoming-cover img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.upcoming-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.coming-soon-badge {
+    background: var(--gradient-secondary);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.upcoming-info h5 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.upcoming-type {
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.upcoming-description {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.upcoming-tracks {
+    margin-top: 0.5rem;
+}
+
+/* Lyrics Section Styles */
+#lyrics {
+    padding: 100px 0;
+}
+
+.lyrics-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.lyrics-selector {
+    text-align: center;
+}
+
+.lyrics-selector .form-select {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 15px;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.lyrics-selector .form-select:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.2rem rgba(253, 121, 168, 0.25);
+    color: white;
+}
+
+.lyrics-selector .form-select option {
+    background: var(--dark-color);
+    color: white;
+}
+
+.lyrics-content {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    min-height: 400px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.lyrics-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.lyrics-text {
+    color: white;
+    line-height: 1.8;
+    font-size: 1rem;
+    white-space: pre-line;
+    text-align: left;
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.lyrics-text::-webkit-scrollbar {
+    width: 6px;
+}
+
+.lyrics-text::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+
+.lyrics-text::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 3px;
+}
+
+.lyrics-text::-webkit-scrollbar-thumb:hover {
+    background: rgba(253, 121, 168, 0.8);
+}
+
+.song-title {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid rgba(253, 121, 168, 0.3);
+    padding-bottom: 10px;
+}
+
+/* Enhanced responsive design for new sections */
+@media (max-width: 768px) {
+    .upcoming-release-card {
+        padding: 15px;
+    }
+    
+    .upcoming-cover img {
+        height: 120px;
+    }
+    
+    .upcoming-info h5 {
+        font-size: 1.1rem;
+    }
+    
+    .upcoming-description {
+        font-size: 0.9rem;
+    }
+    
+    .lyrics-content {
+        padding: 25px;
+        min-height: 300px;
+    }
+    
+    .lyrics-text {
+        font-size: 0.95rem;
+        max-height: 400px;
+    }
+    
+    .song-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .upcoming-release-card .row {
+        text-align: center;
+    }
+    
+    .upcoming-cover {
+        margin-bottom: 1rem;
+    }
+    
+    .upcoming-cover img {
+        height: 180px;
+        width: 180px;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+    
+    .lyrics-content {
+        padding: 20px;
+    }
+    
+    .lyrics-selector .form-select {
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+    
+    .song-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Loading animation for lyrics */
+.lyrics-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    flex-direction: column;
+}
+
+.lyrics-loading .spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid var(--accent-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.lyrics-loading p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+}
+
+/* Enhanced platform links for better mobile experience */
+@media (max-width: 576px) {
+    .streaming-platforms {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .platform-link {
+        width: 200px;
+        justify-content: center;
+    }
+}

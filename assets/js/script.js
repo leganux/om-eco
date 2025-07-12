@@ -218,6 +218,90 @@ $(document).ready(function() {
         }
     });
 
+    // Lyrics functionality
+    const lyricsData = {
+        'aun-de-pie': {
+            title: 'Aún de Pie',
+            file: 'Aun de pie.txt'
+        },
+        'ca-chi-pa': {
+            title: 'Ca Chi Pa Verdad y Libertad',
+            file: 'Ca chi pa verdad y libertad.txt'
+        },
+        'circuitos-rotos': {
+            title: 'Circuitos Rotos',
+            file: 'Circuitos rotos.txt'
+        },
+        'hacer-lo-correcto': {
+            title: 'Hacer lo Correcto',
+            file: 'Hacer lo Correcto.txt'
+        },
+        'karma-vs-darma': {
+            title: 'Karma vs Darma',
+            file: 'Karma vs darma.txt'
+        },
+        'perdi': {
+            title: 'Perdí',
+            file: 'Perdí.txt'
+        },
+        'protagonista': {
+            title: 'Protagonista',
+            file: 'Protagonista.txt'
+        },
+        'spinoff': {
+            title: 'Spinoff el Final Alternativo',
+            file: 'Spinoff el final alternativo.txt'
+        },
+        'verdad-que-sana': {
+            title: 'Verdad que Sana',
+            file: 'Verdad que sana.txt'
+        }
+    };
+
+    // Handle lyrics selection
+    $('#lyricsSelect').change(function() {
+        const selectedSong = $(this).val();
+        const lyricsContent = $('#lyricsContent');
+        
+        if (!selectedSong) {
+            lyricsContent.html(`
+                <div class="lyrics-placeholder text-center">
+                    <i class="fas fa-music fa-3x mb-3 text-muted"></i>
+                    <p class="text-muted">Selecciona una canción para ver sus letras</p>
+                </div>
+            `);
+            return;
+        }
+
+        // Show loading
+        lyricsContent.html(`
+            <div class="lyrics-loading">
+                <div class="spinner"></div>
+                <p>Cargando letras...</p>
+            </div>
+        `);
+
+        // Load lyrics from file
+        const songData = lyricsData[selectedSong];
+        if (songData) {
+            $.get(`assets/letras/${songData.file}`)
+                .done(function(data) {
+                    lyricsContent.html(`
+                        <div class="song-title">${songData.title}</div>
+                        <div class="lyrics-text">${data}</div>
+                    `);
+                })
+                .fail(function() {
+                    lyricsContent.html(`
+                        <div class="lyrics-placeholder text-center">
+                            <i class="fas fa-exclamation-triangle fa-3x mb-3 text-warning"></i>
+                            <p class="text-muted">Error al cargar las letras. Inténtalo de nuevo.</p>
+                        </div>
+                    `);
+                });
+        }
+    });
+
     // Initialize all functions
     initContactForm();
     

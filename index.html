@@ -51,6 +51,9 @@
               <a class="nav-link" href="#music">Música</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#lyrics">Letras</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#story">Historia</a>
             </li>
             <li class="nav-item">
@@ -224,14 +227,30 @@
                       <a
                         href="https://open.spotify.com/intl-es/album/0LuDYKsOKVujeYkfD5gxjL"
                         class="platform-link"
+                        target="_blank"
                       >
                         <i class="fab fa-spotify"></i> Spotify
                       </a>
-                      <a href="#" class="platform-link">
-                        <i class="fab fa-apple"></i> Apple Music (próximamente)
+                      <a 
+                        href="http://itunes.apple.com/album/id1825655750?ls=1&app=itunes" 
+                        class="platform-link"
+                        target="_blank"
+                      >
+                        <i class="fab fa-apple"></i> Apple Music
                       </a>
-                      <a href="#" class="platform-link">
-                        <i class="fab fa-youtube"></i> YouTube (próximamente)
+                      <a 
+                        href="https://music.youtube.com/playlist?list=OLAK5uy_mbHoGC7pkOUl3Bom3cX1T9ev59lC48MEE" 
+                        class="platform-link"
+                        target="_blank"
+                      >
+                        <i class="fab fa-youtube"></i> YouTube Music
+                      </a>
+                      <a 
+                        href="https://www.youtube.com/playlist?list=OLAK5uy_mbHoGC7pkOUl3Bom3cX1T9ev59lC48MEE" 
+                        class="platform-link"
+                        target="_blank"
+                      >
+                        <i class="fab fa-youtube"></i> YouTube
                       </a>
                     </div>
                   </div>
@@ -241,12 +260,111 @@
           </div>
         </div>
         <div class="row mt-5">
-          <div class="col-lg-12 text-center">
+          <div class="col-lg-12 text-center mb-4">
             <h4>Próximos Lanzamientos</h4>
-            <p class="text-muted">Varios álbumes y sencillos en camino...</p>
-            <div class="coming-soon">
-              <i class="fas fa-music"></i>
-              <span>Mantente atento a las novedades</span>
+            <p class="text-muted">Nuevos proyectos musicales en camino...</p>
+          </div>
+        </div>
+        
+        <!-- Upcoming Releases -->
+        <div class="row mt-4">
+          <div class="col-lg-6 mb-4">
+            <div class="upcoming-release-card">
+              <div class="row align-items-center">
+                <div class="col-md-4">
+                  <div class="upcoming-cover">
+                    <img
+                      src="assets/images/modo guerra/cover.jpg"
+                      alt="Modo Guerra"
+                      class="img-fluid rounded"
+                    />
+                    <div class="upcoming-overlay">
+                      <span class="coming-soon-badge">Próximamente</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="upcoming-info">
+                    <h5>Modo Guerra</h5>
+                    <p class="upcoming-type">Álbum • 8 Canciones</p>
+                    <p class="upcoming-description">
+                      Un álbum con las enseñanzas del temach. Canciones de motivación para aquellos que están en modo guerra: mejorar en lo físico, espiritual y mental.
+                    </p>
+                    <div class="upcoming-tracks">
+                      <small class="text-muted">Incluye: "Modo Guerra", "El Examen", "No Queremos Simps", "El Pinche Pelón Tenía Razón"...</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6 mb-4">
+            <div class="upcoming-release-card">
+              <div class="row align-items-center">
+                <div class="col-md-4">
+                  <div class="upcoming-cover">
+                    <img
+                      src="assets/images/un solo ser/image (10).png"
+                      alt="Un Solo Ser"
+                      class="img-fluid rounded"
+                    />
+                    <div class="upcoming-overlay">
+                      <span class="coming-soon-badge">Próximamente</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="upcoming-info">
+                    <h5>Un Solo Ser</h5>
+                    <p class="upcoming-type">Single</p>
+                    <p class="upcoming-description">
+                      Un mantra para el alma. Una canción que invita a la reflexión profunda y la conexión espiritual.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lyrics Section -->
+    <section id="lyrics" class="py-5 bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center mb-5">
+            <h2 class="section-title text-white">Letras</h2>
+            <p class="section-subtitle text-light">
+              Las palabras que nacen del alma
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="lyrics-container">
+              <div class="lyrics-selector mb-4">
+                <select id="lyricsSelect" class="form-select form-select-lg">
+                  <option value="">Selecciona una canción...</option>
+                  <option value="aun-de-pie">Aún de Pie</option>
+                  <option value="ca-chi-pa">Ca Chi Pa Verdad y Libertad</option>
+                  <option value="circuitos-rotos">Circuitos Rotos</option>
+                  <option value="hacer-lo-correcto">Hacer lo Correcto</option>
+                  <option value="karma-vs-darma">Karma vs Darma</option>
+                  <option value="perdi">Perdí</option>
+                  <option value="protagonista">Protagonista</option>
+                  <option value="spinoff">Spinoff el Final Alternativo</option>
+                  <option value="verdad-que-sana">Verdad que Sana</option>
+                </select>
+              </div>
+              
+              <div id="lyricsContent" class="lyrics-content">
+                <div class="lyrics-placeholder text-center">
+                  <i class="fas fa-music fa-3x mb-3 text-muted"></i>
+                  <p class="text-muted">Selecciona una canción para ver sus letras</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
