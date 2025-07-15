@@ -220,6 +220,7 @@ $(document).ready(function() {
 
     // Lyrics functionality
     const lyricsData = {
+        // Spoiler Alert Sobreviví
         'aun-de-pie': {
             title: 'Aún de Pie',
             file: 'Aun de pie.txt'
@@ -255,6 +256,39 @@ $(document).ready(function() {
         'verdad-que-sana': {
             title: 'Verdad que Sana',
             file: 'Verdad que sana.txt'
+        },
+        // Modo Guerra
+        'modo-guerra-activo': {
+            title: 'Modo Guerra Activado',
+            file: 'Modo guerra activo.txt'
+        },
+        'no-queremos-simps': {
+            title: 'No Queremos Simps',
+            file: 'No queremos simps.txt'
+        },
+        'el-examen-hardcore': {
+            title: 'El Examen (Hardcore)',
+            file: 'El examen hardcore.txt'
+        },
+        'el-examen': {
+            title: 'El Examen',
+            file: 'El Examen.txt'
+        },
+        'tribu-y-compas': {
+            title: 'Tribu Y Compas',
+            file: 'Tribu y compas.txt'
+        },
+        'vida-en-conciencia': {
+            title: 'Vida En Conciencia',
+            file: 'Vida en conciencia.txt'
+        },
+        'pinche-pelon-tenia-razon': {
+            title: 'Pinche Pelón Tenía Razón',
+            file: 'El piche pelon tenia razon.txt'
+        },
+        'prologo': {
+            title: 'Prólogo',
+            file: 'Prologo.txt'
         }
     };
 
