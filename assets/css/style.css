@@ -436,6 +436,64 @@ html {
     color: #666;
 }
 
+/* Story narrative styles */
+.story-narrative {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.story-narrative p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.story-narrative .lead {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.story-narrative strong {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.story-narrative em {
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+.call-to-action {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action h4 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.call-to-action .lead {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.call-to-action .text-muted {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 1rem;
+}
+
 /* Contact Section */
 #contact {
     padding: 100px 0;
@@ -1116,4 +1174,298 @@ img:hover {
         width: 200px;
         justify-content: center;
     }
+}
+
+/* Letras Page Specific Styles */
+.letras-page {
+    background: var(--gradient-primary);
+    min-height: 100vh;
+    color: white;
+}
+
+.letras-page .navbar {
+    background: rgba(44, 62, 80, 0.95) !important;
+}
+
+.letras-sidebar {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.letras-sidebar .list-group-item {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.letras-sidebar .list-group-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+.letras-sidebar .list-group-item.active {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+}
+
+.letras-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    min-height: 600px;
+}
+
+.album-lyrics {
+    display: none;
+}
+
+.album-lyrics.active {
+    display: block;
+}
+
+.album-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.album-header h3 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.album-header p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+}
+
+.songs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.song-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.song-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.song-card h6 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.song-card p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+#lyrics-display {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: none;
+}
+
+#lyrics-display.show {
+    display: block;
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.lyrics-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#song-title {
+    color: var(--accent-color);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+#song-album {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#lyrics-text {
+    color: white;
+    line-height: 2;
+    font-size: 1.1rem;
+    white-space: pre-line;
+    text-align: left;
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#lyrics-text::-webkit-scrollbar {
+    width: 8px;
+}
+
+#lyrics-text::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+#lyrics-text::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 4px;
+}
+
+#lyrics-text::-webkit-scrollbar-thumb:hover {
+    background: rgba(253, 121, 168, 0.8);
+}
+
+/* Responsive design for letras page */
+@media (max-width: 768px) {
+    .letras-sidebar {
+        padding: 20px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .letras-content {
+        padding: 25px;
+    }
+    
+    .album-header h3 {
+        font-size: 2rem;
+    }
+    
+    .songs-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    #lyrics-display {
+        padding: 25px;
+        margin-top: 2rem;
+    }
+    
+    #song-title {
+        font-size: 1.5rem;
+    }
+    
+    #lyrics-text {
+        font-size: 1rem;
+        line-height: 1.8;
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .letras-sidebar {
+        padding: 15px;
+    }
+    
+    .letras-content {
+        padding: 20px;
+    }
+    
+    .album-header h3 {
+        font-size: 1.8rem;
+    }
+    
+    .album-header p {
+        font-size: 1rem;
+    }
+    
+    .song-card {
+        padding: 15px;
+    }
+    
+    .song-card h6 {
+        font-size: 1.1rem;
+    }
+    
+    #lyrics-display {
+        padding: 20px;
+    }
+    
+    #song-title {
+        font-size: 1.3rem;
+    }
+    
+    #song-album {
+        font-size: 1rem;
+    }
+    
+    #lyrics-text {
+        font-size: 0.95rem;
+        padding: 15px;
+    }
+}
+
+/* Loading state for lyrics */
+.lyrics-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.lyrics-loading .spinner-border {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.lyrics-loading p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+}
+
+/* Error state for lyrics */
+.lyrics-error {
+    text-align: center;
+    padding: 3rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.lyrics-error i {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.lyrics-error p {
+    font-size: 1.1rem;
+    margin: 0;
 }

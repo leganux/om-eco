@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Letras - OM&ECO</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="letras-page">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="OM&ECO Logo" height="40" />
+          OM&ECO
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#music">Música</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="letras.html">Letras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#story">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-dark text-white" style="padding-top: 120px; padding-bottom: 60px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h1 class="display-4 mb-3">Letras</h1>
+            <p class="lead">Las palabras que nacen del alma</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lyrics Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="lyrics-sidebar sticky-top" style="top: 100px;">
+              <h5 class="mb-3">Seleccionar Álbum</h5>
+              <div class="list-group">
+                <button class="list-group-item list-group-item-action active" data-album="spoiler-alert">
+                  Spoiler Alert Sobreviví
+                </button>
+                <button class="list-group-item list-group-item-action" data-album="modo-guerra">
+                  Modo Guerra
+                </button>
+                <button class="list-group-item list-group-item-action" data-album="creando-fluyendo">
+                  Creando y Fluyendo
+                </button>
+                <button class="list-group-item list-group-item-action" data-album="equilibrio-universal">
+                  Equilibrio Universal
+                </button>
+                <button class="list-group-item list-group-item-action" data-album="love-makes-world">
+                  Love Love Love Makes The World Go Round
+                </button>
+                <button class="list-group-item list-group-item-action" data-album="tiempo-quinto-sol">
+                  Tiempo del Quinto Sol
+                </button>
+                <button class="list-group-item list-group-item-action" data-album="singles">
+                  Singles
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-9">
+            <div class="lyrics-content">
+              <!-- Spoiler Alert Sobreviví -->
+              <div id="spoiler-alert" class="album-lyrics active">
+                <div class="album-header mb-4">
+                  <h3>Spoiler Alert Sobreviví</h3>
+                  <p class="text-muted">2025 • Primer Álbum • 10 Canciones</p>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="aun-de-pie">
+                      <h6><i class="fas fa-music me-2"></i>Aún de Pie</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="ca-chi-pa">
+                      <h6><i class="fas fa-music me-2"></i>Ca Chi Pa Verdad y Libertad</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="circuitos-rotos">
+                      <h6><i class="fas fa-music me-2"></i>Circuitos Rotos</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="hacer-lo-correcto">
+                      <h6><i class="fas fa-music me-2"></i>Hacer lo Correcto</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="karma-vs-darma">
+                      <h6><i class="fas fa-music me-2"></i>Karma vs Darma</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="perdi">
+                      <h6><i class="fas fa-music me-2"></i>Perdí</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="protagonista">
+                      <h6><i class="fas fa-music me-2"></i>Protagonista</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="spinoff">
+                      <h6><i class="fas fa-music me-2"></i>Spinoff el Final Alternativo</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="verdad-que-sana">
+                      <h6><i class="fas fa-music me-2"></i>Verdad que Sana</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modo Guerra -->
+              <div id="modo-guerra" class="album-lyrics">
+                <div class="album-header mb-4">
+                  <h3>Modo Guerra</h3>
+                  <p class="text-muted">2025 • Segundo Álbum • 8 Canciones</p>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="modo-guerra-activo">
+                      <h6><i class="fas fa-music me-2"></i>Modo Guerra Activado</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="no-queremos-simps">
+                      <h6><i class="fas fa-music me-2"></i>No Queremos Simps</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="el-examen-hardcore">
+                      <h6><i class="fas fa-music me-2"></i>El Examen (Hardcore)</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="el-examen">
+                      <h6><i class="fas fa-music me-2"></i>El Examen</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="tribu-y-compas">
+                      <h6><i class="fas fa-music me-2"></i>Tribu Y Compas</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="vida-en-conciencia">
+                      <h6><i class="fas fa-music me-2"></i>Vida En Conciencia</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="pinche-pelon-tenia-razon">
+                      <h6><i class="fas fa-music me-2"></i>Pinche Pelón Tenía Razón</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="prologo">
+                      <h6><i class="fas fa-music me-2"></i>Prólogo</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Creando y Fluyendo -->
+              <div id="creando-fluyendo" class="album-lyrics">
+                <div class="album-header mb-4">
+                  <h3>Creando y Fluyendo</h3>
+                  <p class="text-muted">Mantras personales para motivación diaria y unir la conciencia • 3 Canciones</p>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="construyamos-puentes">
+                      <h6><i class="fas fa-music me-2"></i>Construyamos Puentes</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="creer-es-crear">
+                      <h6><i class="fas fa-music me-2"></i>Creer es Crear</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="un-solo-ser">
+                      <h6><i class="fas fa-music me-2"></i>Un Solo Ser (Mantra de Luz y Raíz)</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Equilibrio Universal -->
+              <div id="equilibrio-universal" class="album-lyrics">
+                <div class="album-header mb-4">
+                  <h3>Equilibrio Universal</h3>
+                  <p class="text-muted">Dedicado a los elementos mente, cuerpo y espíritu • 9 Canciones</p>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="intro">
+                      <h6><i class="fas fa-music me-2"></i>Intro</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="mente-liberala">
+                      <h6><i class="fas fa-music me-2"></i>Mente (Libérala)</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="cuerpo-templo-sol">
+                      <h6><i class="fas fa-music me-2"></i>Cuerpo (Templo del Sol)</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="lattice-somos-uno">
+                      <h6><i class="fas fa-music me-2"></i>Lattice (Somos Uno)</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="fuego-sol-interno">
+                      <h6><i class="fas fa-music me-2"></i>Fuego (Sol Interno)</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="tierra-estoy-aqui">
+                      <h6><i class="fas fa-music me-2"></i>Tierra (Estoy Aquí)</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="agua-dejalo-fluir">
+                      <h6><i class="fas fa-music me-2"></i>Agua (Déjalo Fluir)</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="aire-respira-vuela">
+                      <h6><i class="fas fa-music me-2"></i>Aire (Respira y Vuela)</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="equilibrio-universal-om">
+                      <h6><i class="fas fa-music me-2"></i>Equilibrio Universal (OM)</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Love Love Love Makes The World Go Round -->
+              <div id="love-makes-world" class="album-lyrics">
+                <div class="album-header mb-4">
+                  <h3>Love Love Love Makes The World Go Round</h3>
+                  <p class="text-muted">Canciones de amor desde la secundaria, inspiraciones y vivencias • 8 Canciones</p>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="spy-family-mision-amor">
+                      <h6><i class="fas fa-music me-2"></i>Spy x Family (Misión Amor)</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="mi-papa-es-spy">
+                      <h6><i class="fas fa-music me-2"></i>Mi Papá es un Spy (Versión desde Anya)</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="deseo-juramento-negro">
+                      <h6><i class="fas fa-music me-2"></i>Deseo el Juramento Negro</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="amor-hace-mundo-girar">
+                      <h6><i class="fas fa-music me-2"></i>El Amor Hace al Mundo Girar</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="love-makes-world-title">
+                      <h6><i class="fas fa-music me-2"></i>Love Love Love Makes The World Go Round</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="me-enamore">
+                      <h6><i class="fas fa-music me-2"></i>Me Enamoré</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="nos-casamos-agosto">
+                      <h6><i class="fas fa-music me-2"></i>Nos Casamos en Agosto</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="paso-a-paso">
+                      <h6><i class="fas fa-music me-2"></i>Paso a Paso</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="esperanza-alma">
+                      <h6><i class="fas fa-music me-2"></i>Una Esperanza del Alma</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tiempo del Quinto Sol -->
+              <div id="tiempo-quinto-sol" class="album-lyrics">
+                <div class="album-header mb-4">
+                  <h3>Tiempo del Quinto Sol</h3>
+                  <p class="text-muted">Rock y reggae dedicado a las raíces mexicanas aztecas, mayas y culturas ancestrales • 8 Canciones</p>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="corazon-dragon">
+                      <h6><i class="fas fa-music me-2"></i>Corazón de Dragón</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="coyolxauqui-rebelion">
+                      <h6><i class="fas fa-music me-2"></i>Coyolxauqui Rebelión en la Noche</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="danza-tlaloc">
+                      <h6><i class="fas fa-music me-2"></i>Danza de Tláloc</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="retorno-kukulkan">
+                      <h6><i class="fas fa-music me-2"></i>El Retorno de Kukulkán</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="espejo-serpiente">
+                      <h6><i class="fas fa-music me-2"></i>Espejo y Serpiente</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="hijos-maiz">
+                      <h6><i class="fas fa-music me-2"></i>Hijos del Maíz</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="tepozan-corazon-basalto">
+                      <h6><i class="fas fa-music me-2"></i>Tepozán Corazón de Basalto</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="tonantzin-madre-viva">
+                      <h6><i class="fas fa-music me-2"></i>Tonantín Madre Viva</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Singles -->
+              <div id="singles" class="album-lyrics">
+                <div class="album-header mb-4">
+                  <h3>Singles</h3>
+                  <p class="text-muted">Canciones de un momento oscuro, expresión artística de sentimientos • 2 Singles</p>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="cuatro-dias-distancia">
+                      <h6><i class="fas fa-music me-2"></i>Cuatro Días de Distancia</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="song-card" data-song="no-fue-magia-traicion">
+                      <h6><i class="fas fa-music me-2"></i>No Fue Magia (Fue Traición)</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Lyrics Display Area -->
+              <div id="lyrics-display" class="mt-5" style="display: none;">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 id="song-title" class="mb-0"></h5>
+                    <small id="song-album" class="text-muted"></small>
+                  </div>
+                  <div class="card-body">
+                    <div id="lyrics-text" class="lyrics-text"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-black text-white text-center">
+      <div class="container">
+        <p>&copy; 2025 OM&ECO. Todos los derechos reservados.</p>
+        <p class="small text-muted">
+          Donde las emociones se convierten en arte
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- Custom JS for Lyrics -->
+    <script src="assets/js/letras.js"></script>
+  </body>
+</html>
