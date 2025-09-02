@@ -102,7 +102,29 @@ $(document).ready(function() {
             
             // Singles
             'cuatro-dias-distancia': 'assets/letras-organizadas/Singles/Cuatro dias de distancia.txt',
-            'no-fue-magia-traicion': 'assets/letras-organizadas/Singles/No Fue Magia (Fue Traicion).txt'
+            'no-fue-magia-traicion': 'assets/letras-organizadas/Singles/No Fue Magia (Fue Traicion).txt',
+
+            // Ecos del ayer - El sueño
+            'walkman-infancia': 'assets/letras-organizadas/Ecos del ayer - El sueño/El walkman de mi infancia.md',
+            'jugar-calle': 'assets/letras-organizadas/Ecos del ayer - El sueño/Jugar en la calle.md',
+            'pinata-navidad': 'assets/letras-organizadas/Ecos del ayer - El sueño/la piñata de navidad.md',
+            'tv-educo': 'assets/letras-organizadas/Ecos del ayer - El sueño/La tv me educo .md',
+            'tortillas-maquinitas': 'assets/letras-organizadas/Ecos del ayer - El sueño/Las tortillas y las maquinitas.md',
+            'modem-56k': 'assets/letras-organizadas/Ecos del ayer - El sueño/modem56k.md',
+            'videocentro': 'assets/letras-organizadas/Ecos del ayer - El sueño/Videocentro.md',
+
+            // 11-11 11 Canciones 11 Mensajes
+            'intro-11-11': 'assets/letras-organizadas/11-11 11 Canciones 11 Mensajes/1, Intro.md',
+            'sabios-antiguos': 'assets/letras-organizadas/11-11 11 Canciones 11 Mensajes/2. Sabios Antiguos.md',
+            'ia-bendicion-maldicion': 'assets/letras-organizadas/11-11 11 Canciones 11 Mensajes/3. La IA: ¿Bendición o Maldición?.md',
+            'gente-poder': 'assets/letras-organizadas/11-11 11 Canciones 11 Mensajes/4. Gente de Poder.md',
+            'ellos-saben': 'assets/letras-organizadas/11-11 11 Canciones 11 Mensajes/ 5. Ellos lo Saben.md',
+            'diablo-mundo': 'assets/letras-organizadas/11-11 11 Canciones 11 Mensajes/6.- El Diablo en el Mundo.md',
+            'iris-ventana-alma': 'assets/letras-organizadas/11-11 11 Canciones 11 Mensajes/7. El Iris: La Ventana del Alma.md',
+            'worldcoin-altman': 'assets/letras-organizadas/11-11 11 Canciones 11 Mensajes/ 8. Worldcoin, Altman y las Consecuencias.md',
+            'ya-esta-pasando': 'assets/letras-organizadas/11-11 11 Canciones 11 Mensajes/9. Ya Está Pasando.md',
+            'abre-ojos': 'assets/letras-organizadas/11-11 11 Canciones 11 Mensajes/10. Abre los Ojos.md',
+            'disyuntiva-creador': 'assets/letras-organizadas/11-11 11 Canciones 11 Mensajes/11. La Disyuntiva (Carta del Creador).md'
         };
 
         const filePath = lyricsMap[songId];
