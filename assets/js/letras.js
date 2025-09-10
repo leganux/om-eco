@@ -124,7 +124,17 @@ $(document).ready(function() {
             'worldcoin-altman': 'assets/letras-organizadas/11-11 11 Canciones 11 Mensajes/ 8. Worldcoin, Altman y las Consecuencias.md',
             'ya-esta-pasando': 'assets/letras-organizadas/11-11 11 Canciones 11 Mensajes/9. Ya Está Pasando.md',
             'abre-ojos': 'assets/letras-organizadas/11-11 11 Canciones 11 Mensajes/10. Abre los Ojos.md',
-            'disyuntiva-creador': 'assets/letras-organizadas/11-11 11 Canciones 11 Mensajes/11. La Disyuntiva (Carta del Creador).md'
+            'disyuntiva-creador': 'assets/letras-organizadas/11-11 11 Canciones 11 Mensajes/11. La Disyuntiva (Carta del Creador).md',
+
+            // Living Not Easy with Eyes Closed
+            'all-those-yesterdays': 'assets/letras-organizadas/Living Not Easy with Eyes Closed/All those yesterdays.txt',
+            'dont-imagine-create': 'assets/letras-organizadas/Living Not Easy with Eyes Closed/Don\'t imagine, Create.txt',
+            'free-as-a-bird': 'assets/letras-organizadas/Living Not Easy with Eyes Closed/Free as a bird again.txt',
+            'i-found-new-love': 'assets/letras-organizadas/Living Not Easy with Eyes Closed/I found a new love.txt',
+            'i-was-the-right': 'assets/letras-organizadas/Living Not Easy with Eyes Closed/I was the right.txt',
+            'living-not-easy-intro': 'assets/letras-organizadas/Living Not Easy with Eyes Closed/intro.txt',
+            'revolution-in-my-life': 'assets/letras-organizadas/Living Not Easy with Eyes Closed/Revolition in my life.txt',
+            'shadows-in-the-sun': 'assets/letras-organizadas/Living Not Easy with Eyes Closed/Shadows in the sun.txt'
         };
 
         const filePath = lyricsMap[songId];
