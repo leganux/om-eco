@@ -134,7 +134,33 @@ $(document).ready(function() {
             'i-was-the-right': 'assets/letras-organizadas/Living Not Easy with Eyes Closed/I was the right.txt',
             'living-not-easy-intro': 'assets/letras-organizadas/Living Not Easy with Eyes Closed/intro.txt',
             'revolution-in-my-life': 'assets/letras-organizadas/Living Not Easy with Eyes Closed/Revolition in my life.txt',
-            'shadows-in-the-sun': 'assets/letras-organizadas/Living Not Easy with Eyes Closed/Shadows in the sun.txt'
+            'shadows-in-the-sun': 'assets/letras-organizadas/Living Not Easy with Eyes Closed/Shadows in the sun.txt',
+
+            // El Honorable Consejo de Hombres
+            'intro-consejo': 'assets/letras-organizadas/El Honorable Conse de Hombres/intro.txt',
+            'consulta-ex': 'assets/letras-organizadas/El Honorable Conse de Hombres/CONSULTA AL CONSEJO POR TU EX.txt',
+            'consejo-deniega': 'assets/letras-organizadas/El Honorable Conse de Hombres/EL CONSEJO DENIEGA ESA PETICIÓN.txt',
+            'secreto-secta': 'assets/letras-organizadas/El Honorable Conse de Hombres/El secreto de la secta.txt',
+            'trono-sagrado': 'assets/letras-organizadas/El Honorable Conse de Hombres/EL TRONO SAGRADO.txt',
+            'macho-alfa': 'assets/letras-organizadas/El Honorable Conse de Hombres/HARÁS QUEDAR A TU AMIGO COMO MACHO ALFA FRENTE A SU DAMISELA.txt',
+            'no-te-rindas': 'assets/letras-organizadas/El Honorable Conse de Hombres/HERMANO, NO TE RINDAS.txt',
+            'honorable-consejo': 'assets/letras-organizadas/El Honorable Conse de Hombres/Honorable consejo de hombres.txt',
+            'diez-mandamientos': 'assets/letras-organizadas/El Honorable Conse de Hombres/LOS DIEZ MANDAMIENTOS DEL CONSEJO DE HOMBRES.txt',
+            'permiso-peticion': 'assets/letras-organizadas/El Honorable Conse de Hombres/PERMISO PARA PRESENTAR UNA PETICIÓN.txt',
+            'peticion-calzon': 'assets/letras-organizadas/El Honorable Conse de Hombres/PETICIÓN POR MI CALZÓN, MI CALCETÍN.txt',
+            'vender-xbox': 'assets/letras-organizadas/El Honorable Conse de Hombres/VENDER TU XBOX.txt',
+
+            // Viaje al mundo de las ideas
+            'colores': 'assets/letras-organizadas/Viaje al mundo de las  ideas/colores.txt',
+            'entre-mundos': 'assets/letras-organizadas/Viaje al mundo de las  ideas/Entre mundos.txt',
+            'intuicion': 'assets/letras-organizadas/Viaje al mundo de las  ideas/intuicion.txt',
+            'liminal': 'assets/letras-organizadas/Viaje al mundo de las  ideas/liminal.txt',
+            'mirate-manos': 'assets/letras-organizadas/Viaje al mundo de las  ideas/Mirate las manos.txt',
+            'monje-barrio': 'assets/letras-organizadas/Viaje al mundo de las  ideas/Monje de barrio.txt',
+            'no-necesitas': 'assets/letras-organizadas/Viaje al mundo de las  ideas/No necesitas platas.txt',
+            'no-pasa-nada': 'assets/letras-organizadas/Viaje al mundo de las  ideas/No pasa nada.txt',
+            'respira': 'assets/letras-organizadas/Viaje al mundo de las  ideas/respira.txt',
+            'teta': 'assets/letras-organizadas/Viaje al mundo de las  ideas/teta.txt'
         };
 
         const filePath = lyricsMap[songId];
