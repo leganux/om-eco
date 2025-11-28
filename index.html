@@ -24,6 +24,156 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!-- Featured Album Hero -->
+    <section class="featured-hero" style="
+      background: linear-gradient(to right, #1a0f0f, #2c1810);
+      padding: 4rem 0;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 3px solid #8B4513;
+    ">
+      <!-- Decorative elements for baroque style -->
+      <div class="baroque-overlay" style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iMiIgZmlsbD0iI2Q0YWY0MCIgZmlsbC1vcGFjaXR5PSIwLjEiLz48L3N2Zz4=');
+        opacity: 0.1;
+      "></div>
+      
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <div class="featured-album-cover" style="
+              position: relative;
+              padding: 20px;
+              background: linear-gradient(45deg, #8B4513, #D2691E);
+              border-radius: 10px;
+              box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+              transform: rotate(-3deg);
+            ">
+              <img
+                src="assets/letras-organizadas/El Honorable Conse de Hombres/Gemini_Generated_Image_x0aty9x0aty9x0at.png"
+                alt="El Honorable Consejo de Hombres"
+                class="img-fluid rounded"
+                style="transform: rotate(3deg);"
+              />
+              <div class="featured-badge" style="
+                position: absolute;
+                top: -15px;
+                right: -15px;
+                background: #FFD700;
+                color: #000;
+                padding: 10px 20px;
+                border-radius: 25px;
+                transform: rotate(15deg);
+                font-weight: bold;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+              ">
+                ¡Nuevo Lanzamiento!
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-8">
+            <div class="featured-content" style="
+              color: #fff;
+              padding: 2rem;
+              background: rgba(0,0,0,0.3);
+              border-radius: 15px;
+              border: 1px solid rgba(139,69,19,0.3);
+            ">
+              <h2 style="
+                font-size: 2.5rem;
+                color: #FFD700;
+                margin-bottom: 1.5rem;
+                font-family: 'Playfair Display', serif;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+              ">El Honorable Consejo de Hombres</h2>
+              
+              <div class="featured-text" style="
+                white-space: pre-line;
+                line-height: 1.8;
+                font-size: 1.1rem;
+                text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+              ">
+"Este álbum nace de algo muy simple, pero muy real.
+
+El Honorable Consejo de Hombres no es una protesta,
+ni un club exclusivo,
+ni una rebelión contra las mujeres.
+Nada de eso.
+
+Es algo mucho más básico:
+los hombres también necesitamos un espacio para reírnos,
+para hablar de nuestras tonterías,
+para apoyarnos sin juicio
+y para sentir que somos parte de una hermandad.
+
+Porque a veces no sabemos cómo expresar lo que sentimos,
+y otras veces solo necesitamos que otro hombre nos diga:
+'Hermano… no te rindas',
+o 'Ese calcetín todavía sirve',
+o 'No vuelvas con tu ex, por tu propio bien'.
+
+Este álbum celebra eso:
+la unión, la risa,
+la vulnerabilidad escondida detrás de clichés,
+y la importancia de tener un lugar donde los hombres
+pueden bromear, llorar, exagerar historias
+y sentirse acompañados.
+
+Apoyar esta iniciativa no es ir contra nadie.
+Es reconocer que la hermandad masculina
+—cuando nace desde la empatía, el humor y el respeto—
+también sana, también une
+y también hace bien.
+
+Y por eso nace este proyecto:
+para honrar ese espacio,
+para reírnos juntos,
+y para recordarnos que ser hombre
+no es no sentir…
+es tener con quién compartirlo."</div>
+              
+              <div class="streaming-platforms mt-4">
+                <a
+                  href="https://open.spotify.com/intl-es/album/6hDWJnxgsMBqbkdeDCnOYD"
+                  class="btn btn-success btn-lg me-3"
+                  target="_blank"
+                  style="
+                    background: #1DB954;
+                    border: none;
+                    padding: 12px 30px;
+                    border-radius: 25px;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                  "
+                >
+                  <i class="fab fa-spotify me-2"></i> Escuchar en Spotify
+                </a>
+                <a
+                  href="https://music.youtube.com/playlist?list=OLAK5uy_lhZymgjVxSgqnOxiecIl14zvz84BISr_Q"
+                  class="btn btn-danger btn-lg"
+                  target="_blank"
+                  style="
+                    background: #FF0000;
+                    border: none;
+                    padding: 12px 30px;
+                    border-radius: 25px;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                  "
+                >
+                  <i class="fab fa-youtube me-2"></i> Escuchar en YouTube Music
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
@@ -308,12 +458,20 @@
                       </div>
                     </div>
                     <div class="streaming-platforms">
-                      <span class="text-muted">
-                        <i class="fab fa-spotify"></i> Spotify (Próximamente)
-                      </span>
-                      <span class="text-muted">
-                        <i class="fab fa-youtube"></i> YouTube Music (Próximamente)
-                      </span>
+                      <a
+                        href="https://open.spotify.com/intl-es/album/6hDWJnxgsMBqbkdeDCnOYD"
+                        class="platform-link"
+                        target="_blank"
+                      >
+                        <i class="fab fa-spotify"></i> Spotify
+                      </a>
+                      <a
+                        href="https://music.youtube.com/playlist?list=OLAK5uy_lhZymgjVxSgqnOxiecIl14zvz84BISr_Q"
+                        class="platform-link"
+                        target="_blank"
+                      >
+                        <i class="fab fa-youtube"></i> YouTube Music
+                      </a>
                     </div>
                   </div>
                 </div>
